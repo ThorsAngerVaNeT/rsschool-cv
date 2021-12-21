@@ -1,4 +1,5 @@
 # Vadzim Antonau
+<img alt="Vadzim Antonau's photo" src="./assets/img/photo.jpg" width="300">
 
 ## Contacts
 
