@@ -8,8 +8,8 @@ body {
   background-color: darkgrey;
   margin-top: 0;
   padding: 0px;
-  font-size: 18px;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #919191;
+  font: 12pt 'Source Sans Pro', sans-serif;
 }
 
 main {
@@ -36,13 +36,13 @@ h1 {
 .left-panel {
   background-color: #919191;
   padding: 40px;
-  /* padding-top: 0px; */
+  color: #fafafa;
 }
 
 .right-panel {
   background-color: #fafafa;
   padding: 40px;
-  /* padding-top: 0px; */
+  flex-grow: 1;
 }
 
 .work-position {
