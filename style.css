@@ -68,20 +68,31 @@ h1 {
 nav ul {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 nav ul li {
   list-style: none;
   float: left;
   text-align: center;
-  width: calc(100% / 7);
+  width: calc(100% / 8);
   box-sizing: border-box;
 }
 
 nav li a {
   display: block;
-  padding: 8px;
+  padding: 8px 3px;
   background-color: #919191;
+  width: 100%;
+  /* vertical-align: middle; */
+}
+
+nav .icon {
+  display: none;
 }
 
 footer {
@@ -96,7 +107,7 @@ header {
   border-bottom: darkslategrey 1px solid;
 }
 
-a {
+.left-panel a, nav a {
   color: #fafafa;
 }
 
@@ -104,20 +115,16 @@ a:hover {
   color: #eaaaa0;
 }
 
-a.dark-url {
+a {
   color: #919191;
 }
 
-a.dark-url:hover {
-  color: #eaaaa0;
-}
-
-#contacts img {
+i {
   height: 20px;
   width: 20px;
-  background-size: cover;
   margin-right: 10px;
   vertical-align: middle;
+  text-align: center;
 }
 
 #contacts li {

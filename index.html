@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="./assets/font-awesome/all.min.css">
   <link rel="stylesheet" href="./assets/js/highlight/styles/a11y-dark.min.css" title="dark">
   <link rel="stylesheet" href="./assets/js/highlight/styles/a11y-light.min.css" title="light" disabled="disabled">
   <script src="./assets/js/highlight/highlight.min.js"></script>
@@ -22,9 +23,15 @@
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#code-example">Code Example</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#work-experience">Work Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#languages">Languages</a></li>
+          <!-- <li>
+            <a href="javascript:void(0);" class="icon" onclick="burgerClick()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -34,17 +41,18 @@
         <section id="contacts">
           <h2>Contacts</h2>
           <ul>
-            <li><img src="./assets/img/location.svg" alt="location icon" />Minsk, Belarus</li>
+            <li><i class="fas fa-map-marker-alt"></i>Minsk, Belarus</li>
             <li>
-              <a href="mailto:vanet@tut.by">
-                <img src="./assets/img/mail.svg" alt="mail icon" /><span>vanet@tut.by</span>
+              <a href="mailto:vanet@tut.by" title="Email To Vadzim Antonau">
+                <i class="far fa-envelope"></i><span>vanet@tut.by</span>
               </a>
             </li>
-            <li><img src="./assets/img/telegram.svg" alt="telegram icon" />@thorsangervanet</li>
-            <li><img src="./assets/img/discord.svg" alt="discord icon" />@VaNeT#5916</li>
+            <li><i class="fab fa-telegram-plane"></i>@thorsangervanet</li>
+            <li><i class="fab fa-discord"></i>@VaNeT#5916</li>
+            <!--https://discordapp.com/users/-->
             <li>
               <a title="Vadzim Antonau LinkedIn" href="https://www.linkedin.com/in/vadzim-antonau-394358119/">
-                <img src="./assets/img/linkedin.svg" alt="linkedin icon" /><span>Vadzim Antonau</span>
+                <i class="fab fa-linkedin"></i><span>Vadzim Antonau</span>
               </a>
             </li>
           </ul>
@@ -93,6 +101,17 @@ function isIsogram(str){
 }
           </code>
         </pre>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li><a href="https://github.com/ThorsAngerVaNeT/Ciphering-CLI-Tool" title="Ciphering CLI Tool">Ciphering CLI
+                Tool</a></li>
+            <li><a href="https://github.com/ThorsAngerVaNeT/simple-crud-api" title="Simple CRUD API">Simple CRUD API</a>
+            </li>
+            <li><a href="https://github.com/ThorsAngerVaNeT/nodejs2021Q4-service" title="REST Service">REST Service</a>
+            </li>
+          </ul>
         </section>
         <section id="work-experience">
           <h2>Work Experience</h2>
@@ -160,7 +179,7 @@ function isIsogram(str){
       </div>
     </main>
     <footer>
-      <a class="dark-url" href="http://github.com/ThorsAngerVaNeT">GitHub</a>
+      <a class="dark-url" href="http://github.com/ThorsAngerVaNeT"><i class="fab fa-github"></i>GitHub</a>
       <span>2021</span>
       <a href="https://rs.school/js/">
         <img src="./assets/img/rs_school_js.svg" alt="Rsschool Icon" width="73" height="26">
