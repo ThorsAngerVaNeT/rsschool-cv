@@ -74,7 +74,7 @@ nav ul li {
   list-style: none;
   float: left;
   text-align: center;
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   box-sizing: border-box;
 }
 
@@ -97,14 +97,35 @@ header {
 }
 
 a {
-  color: black;
+  color: #fafafa;
 }
 
-a:active {
-  color: blue;
+a:hover {
+  color: #eaaaa0;
 }
 
-a[tabindex]:focus {
-  color: blue;
-  outline: none;
+a.dark-url {
+  color: #919191;
+}
+
+a.dark-url:hover {
+  color: #eaaaa0;
+}
+
+#contacts img {
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#contacts li {
+  list-style: none;
+  margin-left: -20px;
+  margin-bottom: 5px;
+}
+
+code {
+  overflow: auto;
 }
