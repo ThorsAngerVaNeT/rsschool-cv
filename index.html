@@ -95,7 +95,7 @@
 function isIsogram(str){
   return str == '' || (
     !str.toLowerCase().split('').some(
-      (v,i,a) => a.lastIndexOf(v)!=i;
+      (v,i,a) =&gt; a.lastIndexOf(v)!=i;
     );
   )
 }
