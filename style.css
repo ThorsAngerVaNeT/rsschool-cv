@@ -24,17 +24,7 @@ body {
 main {
   display: flex;
   flex-grow: 1;
-  /* justify-content: space-evenly; */
-  /* flex-wrap: wrap; */
 }
-
-@media (max-width: 1458px) {
-  main {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-}
-
 
 h1, h2 {
   color: #eaaaa0;
@@ -51,6 +41,8 @@ h1 {
   background-color: #919191;
   padding: 40px;
   color: #fafafa;
+  width: 60%;
+  flex-grow: 1;
 }
 
 
@@ -58,12 +50,7 @@ h1 {
   background-color: #fafafa;
   padding: 40px;
   flex-grow: 1;
-}
-
-@media (max-width: 700px) {
-  .left-panel, .right-panel {
-    padding: 0px;
-  }
+  width: 100%;
 }
 
 .work-position {
@@ -149,4 +136,50 @@ i {
 
 code {
   overflow: auto;
+}
+
+
+@media (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  .left-panel, .right-panel {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 340px) {
+  main {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .left-panel, .right-panel {
+    padding: 0px;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
+  }
 }
