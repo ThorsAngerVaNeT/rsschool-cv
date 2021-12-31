@@ -1,11 +1,186 @@
-img {
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-top: 0;
+  padding: 0;
+  font: 12pt 'Source Sans Pro', sans-serif;
+  color: #919191;
+  background-color: darkgrey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+h1,
+h2 {
+  color: #eaaaa0;
+}
+
+h1 {
+  font-size: 48.6pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.left-panel {
+  width: 40%;
+  flex-grow: 1;
+  padding: 40px;
+  color: #fafafa;
+  background-color: #919191;
+}
+
+
+.right-panel {
+  flex-grow: 1;
+  width: 100%;
+  padding: 40px;
+  background-color: #fafafa;
+}
+
+.work-position {
+  height: 60px;
+  color: #fafafa;
+  font-size: 12.6pt;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #919191;
+}
+
+.work-position__text {
+  padding-top: 20px;
+}
+
+.photo {
   width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-li {
-  font-size: 18px;
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #919191;
 }
 
-#about-me>p {
-  width: 600px;
+
+nav li a {
+  width: 100%;
+  padding: 14px 10px;
+  line-height: 40px;
+}
+
+nav .icon {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  background-color: #fafafa;
+  border-top: darkslategrey 1px solid;
+}
+
+header {
+  border-bottom: darkslategrey 1px solid;
+}
+
+.left-panel a, nav a {
+  color: #fafafa;
+}
+
+a:hover {
+  color: #eaaaa0;
+}
+
+a {
+  color: #919191;
+}
+
+i {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#contacts li {
+  margin-bottom: 5px;
+  margin-left: -20px;
+  list-style: none;
+}
+
+code {
+  overflow: auto;
+}
+
+
+@media (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 340px) {
+  main {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 0px;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
+  }
 }
